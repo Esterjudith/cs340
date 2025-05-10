@@ -3,4 +3,178 @@
 *:before,
 *:after {
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
 }
+
+body {
+  margin-left: 0.5rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+}
+.my-account {
+  align-self: flex-start;
+
+}
+header a {
+  text-decoration: none;
+  color: #171717;
+}
+.header {   
+  color: #171717;
+  font-weight: 600;
+  font-size: 2rem;
+  align-self: flex-end;
+}
+/* Navigation */
+nav{
+  background-color: #171717;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  padding: 20px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Body */
+.hero {
+  margin-top: 1rem;
+  position: relative;
+
+}
+.hero h2 { 
+  color: #171717;
+  margin-bottom: 1rem;
+}
+
+.hero img { 
+  width: 325px;
+}
+.details{
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  max-width: 145px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: .8rem;
+  color:  #02b0d3;
+  font-weight: bolder;
+}
+.details p{
+  margin: 0.25rem 0;
+}
+.details h3 {
+  margin-bottom: 0.25rem; 
+}
+.details button {
+  background-color: #02b0d3;
+  color: #333;
+  font-weight: bolder;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.reviews {
+  margin-top: 1rem;
+}
+.reviews ul {
+  padding-left: 0;
+  margin-left: 0;
+  list-style-position: inside;
+}
+
+.reviews ul li {
+  margin: 1rem 0 1rem 0 ;
+  padding: 0.15rem;
+  
+}
+
+#card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  padding: 1rem;
+
+  max-width: 400px;
+}
+
+.card {
+  background-color: #02b0d3;
+  padding: 1rem;
+  border: grey 1px solid;
+  text-align: center;
+  color: white;
+  min-height: 125px;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.5rem auto;
+}
+
+/* Bigger sizes */
+@media only screen  and (min-width:36em) {
+  .hero img { 
+  width: 900px;
+  margin: 0 auto;
+  }
+  .details{
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  color:  #02b0d3;
+  font-weight: bolder;
+  padding: 1rem;
+ }
+
+ .wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: stretch;
+ }
+  .reviews,
+  .upgrades {
+    flex: 1;
+    padding: 2rem;
+  }
+
+  .reviews h2, 
+  .upgrades h2 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+  .reviews {
+    order: 2;
+    padding: 2rem;
+  }
+  .upgrades {
+    order: 1;
+  }
+  .card {
+  width: 250px;
+  }
+  .reviews ul li {
+  margin: 1rem 0 1rem 0 ;
+  padding: .85rem;
+  
+}
+ }
+
+
