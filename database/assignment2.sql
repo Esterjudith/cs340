@@ -1,6 +1,6 @@
 --#1
 INSERT INTO account VALUES
-	(DEFAULT, 'Tony', 'Stark', 'tony@starkent.com', Iam1ronM@n, DEFAULT);
+	(DEFAULT, 'Tony', 'Stark', 'tony@starkent.com', 'Iam1ronM@n', DEFAULT);
 --#2
 UPDATE public.account
 SET account_type = 'Admin'
