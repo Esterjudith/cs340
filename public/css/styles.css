@@ -5,12 +5,29 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  margin-left: 0.5rem; 
+
+.background-wrapper { 
+  background-image: url("/images/site/checkerboard.jpg");
+  background-size: cover;
+  padding: 2rem 0;
+ 
 }
+#wrapper{
+  border: 1px solid #171717;
+  background-color: #fff;
+  margin: 2rem 5rem;
+}
+
+
 header {
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -54,6 +71,7 @@ nav ul li {
 
 }
 .hero h2 { 
+  padding: 0.5rem;
   color: #171717;
   margin-bottom: 1rem;
 }
@@ -126,11 +144,8 @@ nav ul li {
 }
 
 /* Bigger sizes */
-@media only screen  and (min-width:36em) {
-  body {
-  padding: 2rem;
-  background-image: url(/images/checkerboard.jpg);
-}
+@media only screen  and (min-width:1158px) {
+
   .hero img { 
   width: 900px;
   margin: 0 auto;
@@ -142,7 +157,7 @@ nav ul li {
   max-width: 600px;
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 1.5rem;
-  color:  #02b0d3;
+  color:  #0a4854;
   font-weight: bolder;
   padding: 1rem;
  }
