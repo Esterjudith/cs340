@@ -50,7 +50,7 @@ app.use("/inv", inventoryRoute)
 
 //Index route
 app.get("/", utilities.handleErrors(baseController.buildHome))
-app.get("/error-trigger", utilities.handleErrors(baseController.triggerError))
+// app.get("/error-trigger", utilities.handleErrors(baseController.triggerError))
 
 // File Not Found Route - must be last route in list
 app.get('/favicon.ico', (req, res) => res.status(204).end())
