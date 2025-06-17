@@ -20,14 +20,12 @@ body {
  
 }
 #wrapper{
-  border: 1px solid #171717;
   background-color: #fff;
   margin: 2rem 5rem;
 }
 
 
 header {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -60,8 +58,16 @@ nav ul {
 }
 nav ul li {
   padding: 20px;
-  color: #fff;
+  
   font-size: 1.2rem;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  color: #02b0d3;
 }
 
 /* Body */
@@ -143,8 +149,67 @@ nav ul li {
   margin: 0 auto 0.5rem auto;
 }
 
+#inv-display li {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+ }
+  #inv-display a img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+  }
+  #inv-display li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem;
+  }
+  .namePrice {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.namePrice hr {
+  margin: 0.5rem 0;
+}
+
+.namePrice h2 {
+  margin: 0.25rem 0;
+  font-size: 1.2rem;
+}
+
+.namePrice span {
+  color: #02b0d3;
+  font-weight: bold;
+  font-size: 1rem;
+}
+#inv-display li a:hover {
+  color: #02b0d3;
+}
+
+.vehicle-detail-wrapper {
+  flex-direction: column;
+  align-items: center;
+}
+
+.vehicle-image, .vehicle-info {
+  width: 100%;
+}
+
+main h1 {
+  padding: 1rem;;
+}
+
 /* Bigger sizes */
 @media only screen  and (min-width:1158px) {
+.background-wrapper {
+  min-height: 100vh;
+}
 
   .hero img { 
   width: 900px;
@@ -190,10 +255,43 @@ nav ul li {
   width: 250px;
   }
   .reviews ul li {
-  margin: 1rem 0 1rem 0 ;
-  padding: .85rem;
+    margin: 1rem 0 1rem 0 ;
+    padding: .85rem;
+    
+  }
+  #inv-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto 0;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;  
+  }
+  .vehicle-detail-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items:flex-start;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  .vehicle-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
   
+  .vehicle-image {
+    flex: 1 1 40%;
+    min-width: 280px;
+  }
+
+.vehicle-info {
+    flex: 1 1 50%;
+    min-width: 280px;
+  }
 }
- }
-
-
